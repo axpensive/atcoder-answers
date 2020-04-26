@@ -2,12 +2,33 @@
 
 ## 概要
 
-atcoder での解答をまとめたもの
+atcoder での解答をまとめたもの \
+開発環境や問題を解く上で役立つ情報を記録してます。
 
 ## 開発環境
 
-### C++, VSCodeの設定など
-[参考](https://qiita.com/EngTks/items/ffa2a7b4d264e7a052c6#4-%E3%82%B3%E3%83%B3%E3%83%91%E3%82%A4%E3%83%AB)
+- C++, VSCode の設定
+  - [Visual studio code で競プロ環境構築[mac OS]](https://qiita.com/EngTks/items/ffa2a7b4d264e7a052c6)
+- atcoder-cli, online-judge-tools による自動化
+  - [AtCoder のディレクトリ作成・サンプルケースのテスト・提出を自動化する。atcoder-cli と online-judge-tools](https://qiita.com/takeaship/items/d0718066922612648eaa)
 
-### atcoder-cli, online-judge-toolsによる自動化
-[参考](https://qiita.com/takeaship/items/d0718066922612648eaa)
+## 問題を解く流れ
+
+```shell
+# ディレクトリ作成、問題情報取得
+$ acc new abc150(コンテスト名)
+
+# テスト実行
+$ cd abc150/a
+$ g++ main.cpp && oj t
+
+# コード提出
+$ cd abc150/a
+$ acc s
+
+# githubにあげる
+$ git add .
+$ git status
+$ git commit -m "メッセージ"
+$ git push
+```

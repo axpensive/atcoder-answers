@@ -25,13 +25,14 @@ int main() {
   cin.tie(nullptr);
   ios_base::sync_with_stdio(false);
 
-  long X;
+  long long X;
   cin >> X;
-  long res = 0;
+
+  int res = 0;
 
   res += X / 500 * 1000;
-  X %= 500;
-  res += X / 5 * 5;
+
+  res += X % 500 / 5 * 5;
 
   cout << res << endl;
 

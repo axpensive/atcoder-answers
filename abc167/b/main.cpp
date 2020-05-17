@@ -25,5 +25,19 @@ int main() {
   cin.tie(nullptr);
   ios_base::sync_with_stdio(false);
 
+  long long A, B, C, K;
+  cin >> A >> B >> C >> K;
+  long long res = 0;
+
+  if (K <= A) {
+    res = K;
+  } else if (K <= A + B) {
+    res = A;
+  } else {
+    res = A - (K - A - B);
+  }
+
+  cout << res << endl;
+
   return 0;
 }

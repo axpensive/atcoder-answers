@@ -25,5 +25,25 @@ int main() {
   cin.tie(nullptr);
   ios_base::sync_with_stdio(false);
 
+  string S;
+
+  cin >> S;
+
+  int A = 0;
+  int B = 0;
+  for (int i = 0; i < 3; i++) {
+    if (S[i] == 'A') {
+      ++A;
+    } else {
+      ++B;
+    }
+  }
+
+  if (A > 0 && B > 0) {
+    cout << "Yes" << endl;
+  } else {
+    cout << "No" << endl;
+  }
+
   return 0;
 }

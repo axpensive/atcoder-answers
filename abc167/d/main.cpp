@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #define PI 3.14159265359
+#define rep(i, n) for (int i = 0; i < (n); ++i)
 using namespace std;
 template <class T>
 inline bool chmax(T &a, T b) {

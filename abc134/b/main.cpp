@@ -25,5 +25,19 @@ int main() {
   cin.tie(nullptr);
   ios_base::sync_with_stdio(false);
 
+  int N, D;
+  cin >> N >> D;
+  int cur = 0;
+  int res = 0;
+  while (true) {
+    cur += D * 2 + 1;
+    ++res;
+    if (cur >= N) {
+      break;
+    }
+  }
+
+  cout << res << endl;
+
   return 0;
 }

@@ -25,5 +25,14 @@ int main() {
   cin.tie(nullptr);
   ios_base::sync_with_stdio(false);
 
+  long long A, B, K, L;
+
+  cin >> A >> B >> K >> L;
+
+  long long res = K / L * B + K % L * A;
+
+  chmin(res, K * A);
+  cout << res << endl;
+
   return 0;
 }

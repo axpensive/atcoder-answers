@@ -18,6 +18,10 @@ atcoder での解答をまとめたもの \
 # ディレクトリ作成、問題情報取得
 $ acc new abc150(コンテスト名)
 
+# 問題のリンク一覧を表示する。
+$ cd abc150
+$ acc tasks
+
 # テスト実行
 $ cd abc150/a
 $ g++ main.cpp && oj t
